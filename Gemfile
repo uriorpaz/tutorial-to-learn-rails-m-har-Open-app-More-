@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'
+
+gem 'bootstrap-sass'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -42,6 +44,7 @@ group :development, :test do
   gem 'minitest-reporters'
   gem 'guard'
   gem 'guard-minitest'
+  gem 'rails-controller-testing'
 end
 
 group :development do
