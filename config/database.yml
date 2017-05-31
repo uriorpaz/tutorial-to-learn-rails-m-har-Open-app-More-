@@ -7,27 +7,28 @@
 default: &default
   pool: 5
   timeout: 5000
+  adapter: postgresql
+
 
 development:
   <<: *default
-  adapter: postgresql
-  database: toyapp
-  username: postgres
-  password: orpaz2012
+  host: ec2-54-235-90-107.compute-1.amazonaws.com
+  database: dc8slfu3j5t50d
+  username: kuyauldjkljlkl
+  password: b274ccaea9adafe72aa4d2cae4fc782fac3dab139c33542a8b7ff8a04a8a2cd5
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: postgresql
   database: toyapp
   username: postgres
   password: orpaz2012
 
 production:
   <<: *default
-  adapter: postgresql
   database: toyapp
   username: postgres
   password: orpaz2012
